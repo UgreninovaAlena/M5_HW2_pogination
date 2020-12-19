@@ -88,25 +88,5 @@ except ImportError:
     pass
 
 
-FILES_PATH = os.path.join(os.getcwd(), 'data.csv')
-ITEMS_ON_PAGE = 10
-
-
-#  ЕСЛИ ЗАПУСТИТЬ settings.py С ДАННЫМ КУСКОМ КОДА, CONTENT СФОРМИРУЕТСЯ И ВЫВКДКТСЯ НА ЭКРАН
-#
-# def get_content(path):
-#     colum_name = ['ID', 'Name', 'Street', 'District']
-#     content = []
-#
-#     with open(path, newline='', encoding='cp1251') as csvfile:
-#         file_reader = csv.DictReader(csvfile, delimiter=",")
-#
-#         for elem in file_reader:
-#             content_elem = {}
-#             for colum in colum_name:
-#                 content_elem[colum] = elem[colum]
-#             content.append(content_elem)
-#         return content
-
-# CONTENT = get_content(FILES_PATH)
-# pprint(CONTENT)
+FILES_PATH = os.path.join(BASE_DIR, 'data.csv')
+ITEMS_ON_PAGE = 3
